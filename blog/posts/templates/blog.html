@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Listado</title>
+</head>
+<body>
+	<h1>Listado de post</h1>
+	<a href="{%url 'home'%}"></a>
+
+
+	<div id="Formulario">
+		<form method="post" action=".">
+			{%csrf_token%}
+			{{form.as_p}}
+		</form>	
+	</div>
+</body>
+</html>
